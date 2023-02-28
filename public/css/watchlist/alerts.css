@@ -1,0 +1,116 @@
+.ct-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.ct-card-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-card-header-title-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-container-height);
+}
+
+.ct-card-header-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-container-height);
+  padding-left: .4rem;
+  padding-right: .4rem;
+  font-size: 12px;
+}
+
+.ct-card-header-name:hover {
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  color: var(--main-blue);
+}
+
+.ct-card-header-btn-c {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-card-header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 0px;
+}
+
+.ct-card-header-btn:hover {
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  color: var(--main-blue);
+}
+
+.alerts-card {
+  height: 100%;
+}
+
+.alerts-table th {
+  border-bottom: solid 1px var(--border-color);
+}
+
+.alert-item {
+  height: 28px;
+  border-bottom: solid 1px var(--border-color);
+}
+
+.alert-item .symbol {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.alert-item:hover {
+  background-color: var(--hover-color);
+}
+
+.alert-item:hover .active-alerts__actions {
+  display: flex;
+}
+
+.alert-item .trigger-date {
+  display: flex;
+  text-align: right;
+  font-size: 10px;
+  color: var(--title-color);
+}
+
+.alert-item td {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.alert-item .active-alerts__actions {
+  display: none;
+  font-size: 10px;
+  justify-content: flex-end;
+  padding-top: 3px;
+  gap: 6px;
+  color: #888;
+}
+
+.active-alerts-label {
+  color: var(--main-green);
+}
+
+.triggered-alerts-label {
+  color: var(--main-red);
+}

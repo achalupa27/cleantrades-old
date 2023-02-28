@@ -1,0 +1,202 @@
+@mixin delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+
+    i {
+        display: none;
+        font-size: 8px;
+        opacity: 38%;
+        line-height: 0px;
+    }
+
+    &:hover {
+        background-color: rgb(255, 245, 245);
+        border-radius: 2px;
+
+        i {
+            display: block;
+            color: var(--main-red);
+            opacity: 100%;
+
+        }
+    }
+}
+
+.ct-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--header-height);
+}
+
+.ct-card-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct-card-header-title-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--header-container-height);
+}
+
+.ct-card-header-nav {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 9px;
+        line-height: 0px;
+        opacity: 38%;
+    }
+
+    &:hover {
+        border-radius: 2px;
+        background-color: var(--hover-color);
+        color: var(--main-blue);
+
+        i {
+            opacity: 100%;
+        }
+    }
+}
+
+.ct-card-header-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--header-container-height);
+    padding-left: .4rem;
+    padding-right: .4rem;
+    font-size: 12px;
+
+    &:hover {
+        border-radius: 2px;
+        background-color: var(--hover-color);
+        color: var(--main-blue);
+    }
+}
+
+.ct-card-header-btn-c {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct-card-header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    line-height: 0px;
+
+    &:hover {
+        border-radius: 2px;
+        background-color: var(--hover-color);
+        color: var(--main-blue);
+    }
+}
+
+.wl-card {
+    width: 260px;
+    height: 100%;
+}
+
+.wl-tbl {
+
+    th:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(3),
+    td:nth-child(4) {
+        text-align: right;
+    }
+
+    thead {
+        border-bottom: solid 1px var(--border-color);
+
+        span {
+            font-size: 10px;
+            font-weight: 300;
+            color: var(--title-color);
+
+            &:hover {
+                color: var(--main-blue);
+            }
+        }
+    }
+
+    .wl-item-header {
+        height: var(--item-header-height);
+
+        .actions-wl-item-header {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+
+            .delete-wl-item-header {
+                @include delete-btn;
+            }
+        }
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+    }
+
+    .wl-item {
+        border-bottom: solid 1px var(--border-color);
+        height: var(--item-height);
+
+        .p-change-delete-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .delete-wl-item {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include delete-btn;
+            }
+        }
+
+        td {
+            vertical-align: middle;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        &:hover {
+            background-color: var(--hover-color);
+
+            .symbol {
+                color: var(--main-blue);
+            }
+
+            svg:not(.set) {
+                fill: #ccc;
+                stroke: #ccc;
+            }
+        }
+
+        .flag:hover {
+            svg {
+                fill: #aaa;
+                stroke: #aaa;
+            }
+        }
+    }
+}

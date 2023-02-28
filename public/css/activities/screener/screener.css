@@ -1,0 +1,66 @@
+.screener {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  cursor: default;
+}
+
+.screener-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12px;
+}
+
+.screener-table thead tr {
+  height: 32px;
+}
+
+.screener-table thead th {
+  font-size: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.screener-table thead th:not(:last-child) {
+  border-right: 1px solid var(--border-color);
+}
+
+.screener-table tbody td {
+  padding: .5rem .1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.screener-table .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.screener-table .footer-left,
+.screener-table .footer-right {
+  display: flex;
+}
+
+.screener-table .footer-left > div,
+.screener-table .footer-right > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0 8px;
+  height: 32px;
+}
+
+.screener-table .footer-left > div:hover,
+.screener-table .footer-right > div:hover {
+  background: var(--hover-color);
+}
+
+.screener-table .footer-left > div {
+  border-right: 1px solid var(--border-color);
+}
+
+.screener-table .footer-right > div {
+  border-left: 1px solid var(--border-color);
+}

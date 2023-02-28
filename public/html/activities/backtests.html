@@ -1,0 +1,41 @@
+<div class='backtests activity' id='backtests'>
+    <div class=' scroll' id='backtests-scroll'>
+        <table class='backtests-table activity-table' id='backtests-table'>
+            <thead class='backtests-columns' id='backtestsColumns'>
+                <script>
+                    var columns = ['Symbol', 'Timing', '1R', '2R', '3R', '4R', '2m BBB @ 2R', '5m BBB @ 2R', 'P 5m 9EMA @ 2R', 'LH 5m 9EMA @ 2R', 'EOD', 'MFE'];
+                    var row = $("<tr/>");
+                    $("#backtestsColumns").append(row);
+                    columns.forEach((column, i) => row.append($("<th>" + column + "</th>")))
+                </script>
+            </thead>
+
+            <tbody id='backtestsData'>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="spacer"></div>
+    <div class='panel-footer'>
+        <div class='footer-left'>
+            <div class='journal-date' data-bs-custom-class='custom-tooltip' data-bs-toggle='tooltip' data-bs-placement='top' data-bs-html='true' title='Report Date'>
+                <i class='fi fi-rr-calendar'></i>
+                <input class='report-date-input' type="text" name="report-picker" id="report-picker" />
+            </div>
+            <div class='journal-stats' id='journal-stats'>
+            </div>
+            <div class='reentry'>
+                Re-Entry:
+                <span class='reentry-value'>No</span>
+            </div>
+        </div>
+        <div class='footer-right'>
+            <div class='journal-actions'>
+                <div class='generate-report'>
+                    <i class='fi fi-rr-file'></i>
+                    <span class='report-span'>Generate Report</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

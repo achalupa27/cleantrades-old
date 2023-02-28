@@ -1,0 +1,89 @@
+/* Start Body */
+.trade-row:hover {
+    background-color: var(--hover-color);
+
+    .row-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+}
+
+.row-actions {
+    display: none;
+    position: absolute;
+    top: 1;
+    z-index: 10;
+}
+
+.row-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    padding: 7px;
+    border-radius: 4px;
+
+    i {
+        font-size: 12px;
+    }
+}
+
+.edit-row {
+    background: var(--ct-light-yellow);
+
+    &:hover {
+        background: var(--ct-yellow);
+    }
+}
+
+.delete-row {
+    background-color: var(--ct-light-red);
+
+    &:hover {
+        background: var(--ct-red);
+    }
+}
+
+.trade-row td:last-child {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[contenteditable="true"] {
+    background: var(--ct-light-yellow);
+    padding: 4px 6px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.trades-date {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0 3px;
+    padding-left: 8px;
+    border-right: 1px solid var(--border-color);
+}
+
+.report-date-input {
+    cursor: default;
+    height: 28px;
+    border-radius: 4px;
+    width: 200px;
+    border: none;
+    padding: 0 6px;
+
+    &:hover {
+        background: var(--hover-color);
+    }
+}
+
+
+#commission,
+#slippage {
+    color: #888;
+}

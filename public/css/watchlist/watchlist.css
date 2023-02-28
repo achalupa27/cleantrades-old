@@ -1,0 +1,213 @@
+.ct-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+}
+
+.ct-card-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-card-header-title-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-container-height);
+}
+
+.ct-card-header-nav {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-card-header-nav i {
+  font-size: 9px;
+  line-height: 0px;
+  opacity: 38%;
+}
+
+.ct-card-header-nav:hover {
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  color: var(--main-blue);
+}
+
+.ct-card-header-nav:hover i {
+  opacity: 100%;
+}
+
+.ct-card-header-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--header-container-height);
+  padding-left: .4rem;
+  padding-right: .4rem;
+  font-size: 12px;
+}
+
+.ct-card-header-name:hover {
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  color: var(--main-blue);
+}
+
+.ct-card-header-btn-c {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ct-card-header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 0px;
+}
+
+.ct-card-header-btn:hover {
+  border-radius: 2px;
+  background-color: var(--hover-color);
+  color: var(--main-blue);
+}
+
+.wl-card {
+  height: 100%;
+}
+
+.wl-tbl th:nth-child(3),
+.wl-tbl th:nth-child(4),
+.wl-tbl td:nth-child(3),
+.wl-tbl td:nth-child(4) {
+  text-align: right;
+}
+
+.wl-tbl thead {
+  border-bottom: solid 1px var(--border-color);
+}
+
+.wl-tbl thead span {
+  font-size: 10px;
+  font-weight: 300;
+  color: var(--title-color);
+}
+
+.wl-tbl thead span:hover {
+  color: var(--main-blue);
+}
+
+.wl-tbl .wl-item-header {
+  height: var(--item-header-height);
+}
+
+.wl-tbl .wl-item-header .actions-wl-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.wl-tbl .wl-item-header .actions-wl-item-header .delete-wl-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.wl-tbl .wl-item-header .actions-wl-item-header .delete-wl-item-header i {
+  display: none;
+  font-size: 8px;
+  opacity: 38%;
+  line-height: 0px;
+}
+
+.wl-tbl .wl-item-header .actions-wl-item-header .delete-wl-item-header:hover {
+  background-color: #fff5f5;
+  border-radius: 2px;
+}
+
+.wl-tbl .wl-item-header .actions-wl-item-header .delete-wl-item-header:hover i {
+  display: block;
+  color: var(--main-red);
+  opacity: 100%;
+}
+
+.wl-tbl .wl-item-header:hover {
+  background-color: var(--hover-color);
+}
+
+.wl-tbl .wl-item {
+  border-bottom: solid 1px var(--border-color);
+  height: var(--item-height);
+}
+
+.wl-tbl .wl-item .p-change-delete-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wl-tbl .wl-item .p-change-delete-container .delete-wl-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.wl-tbl .wl-item .p-change-delete-container .delete-wl-item i {
+  display: none;
+  font-size: 8px;
+  opacity: 38%;
+  line-height: 0px;
+}
+
+.wl-tbl .wl-item .p-change-delete-container .delete-wl-item:hover {
+  background-color: #fff5f5;
+  border-radius: 2px;
+}
+
+.wl-tbl .wl-item .p-change-delete-container .delete-wl-item:hover i {
+  display: block;
+  color: var(--main-red);
+  opacity: 100%;
+}
+
+.wl-tbl .wl-item td {
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.wl-tbl .wl-item:hover {
+  background-color: var(--hover-color);
+}
+
+.wl-tbl .wl-item:hover .symbol {
+  color: var(--main-blue);
+}
+
+.wl-tbl .wl-item:hover svg:not(.set) {
+  fill: #ccc;
+  stroke: #ccc;
+}
+
+.wl-tbl .wl-item .flag:hover svg {
+  fill: #aaa;
+  stroke: #aaa;
+}

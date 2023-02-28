@@ -1,0 +1,33 @@
+.wl-item__context .flags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 24px;
+  padding: 0px 5%;
+  border-bottom: solid 1px var(--border-color);
+}
+
+.wl-title-context-wrapper,
+.wl-item-context-wrapper {
+  position: absolute;
+  visibility: hidden;
+  width: 150px;
+  height: 100px;
+  font-size: 10px;
+}
+
+.ct-context-item {
+  display: flex;
+  align-items: center;
+  height: 24px;
+  padding: 0px 5%;
+}
+
+.ct-context-item:hover {
+  background-color: var(--hover-color);
+}
+
+.ct-context-item-icon {
+  padding-top: 4px;
+  margin-right: 4px;
+}

@@ -1,0 +1,199 @@
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-center-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+@mixin item-hover {
+    background-color: var(--hover-color);
+}
+
+@mixin item-border {
+    border-bottom: solid 1px var(--border-color);
+}
+
+@mixin item-header-text {
+    font-size: 10px;
+    font-weight: 500;
+    color: #888;
+}
+
+@mixin icon-container--sm {
+    width: 16px;
+    height: 16px;
+}
+
+.wl-dropdown-card {
+    width: 260px;
+    height: auto;
+}
+
+.watchlist-dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.wl-dropdown {
+    position: relative;
+}
+
+.s-dropdown-flags {
+    @include flex-center-between;
+    height: var(--item-height);
+    @include item-border;
+
+    .s-flag {
+        @include flex-center-center;
+        height: var(--item-height);
+        flex-grow: 1;
+
+        &:hover {
+            @include item-hover;
+        }
+    }
+}
+
+.s-dropdown-hotlist {
+    @include flex-center-between;
+    height: var(--item-height);
+    @include item-border;
+
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+.dropdown-item {
+    font-size: 12px;
+    font-weight: 300;
+    @include flex-center-between;
+    height: 24px;
+    padding: 0px 5%;
+
+    i {
+        display: none;
+        font-size: 8px;
+        padding-top: 3px
+    }
+
+    &:hover {
+        @include item-hover;
+
+        i {
+            display: block;
+        }
+    }
+}
+
+.hotlist-item-c {
+    @include flex-center-center;
+    height: 29px;
+    flex-grow: 1;
+
+    &:hover {
+        @include item-hover;
+    }
+}
+
+.dropdown-item-header {
+    @include flex-center-between;
+    height: var(--item-header-height);
+    padding: 0px 5%;
+
+    .s-item-header-icon-text {
+        @include flex-center-center;
+
+        .c-item-header-icon-text {
+            @include flex-center-center;
+            gap: 6px;
+
+            .c-item-header-icon {
+                @include flex-center-center;
+                line-height: 0px;
+
+                i {
+                    @include item-header-text;
+                }
+            }
+
+            .c-item-header-text {
+                @include flex-center-center;
+                line-height: 0px;
+            }
+        }
+    }
+
+    .s-item-header-actions {
+        @include flex-center-center;
+
+        .c-item-header-actions {
+            @include flex-center-center;
+            gap: 2px;
+
+            i {
+                @include item-header-text;
+            }
+        }
+    }
+}
+
+.dropdown-item-header-btn {
+    @include flex-center-center;
+    @include icon-container--sm;
+    line-height: 0px;
+
+    i {
+        font-size: 8px;
+    }
+
+    &:hover {
+        @include item-hover;
+
+        i {
+            color: var(--main-blue);
+        }
+    }
+}
+
+.txt-volume-gainers {
+    color: var(--main-blue);
+}
+
+.txt-percent-gainers {
+    color: var(--main-green);
+}
+
+.txt-percent-losers {
+    color: var(--main-red);
+}
